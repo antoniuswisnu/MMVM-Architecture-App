@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MVVM Architecture"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:textAlignment="center"
+                android:layout_marginBottom="32dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/width"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                />
+
+            <EditText
+                android:id="@+id/edt_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:autofillHints="Lebar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/height"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                />
+
+            <EditText
+                android:id="@+id/edt_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:autofillHints="Tinggi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/length"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                />
+
+            <EditText
+                android:id="@+id/edt_length"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:autofillHints="Panjang" />
+
+            <Button
+                android:id="@+id/btn_calculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate"
+                />
+
+            <TextView
+                android:id="@+id/tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/result"
+                android:textColor="#212121"
+                android:textSize="32sp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
